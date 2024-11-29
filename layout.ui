@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>596</width>
+    <height>406</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,24 +16,55 @@
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>9</x>
-     <y>9</y>
-     <width>381</width>
-     <height>151</height>
+     <x>10</x>
+     <y>0</y>
+     <width>571</width>
+     <height>391</height>
     </rect>
    </property>
-   <layout class="QGridLayout" name="gridLayout"/>
-  </widget>
-  <widget class="QWidget" name="gridLayoutWidget_2">
-   <property name="geometry">
-    <rect>
-     <x>9</x>
-     <y>169</y>
-     <width>381</width>
-     <height>121</height>
-    </rect>
-   </property>
-   <layout class="QGridLayout" name="gridLayout_2"/>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QListWidget" name="listWidget">
+      <item>
+       <property name="text">
+        <string>Patryk Janusz</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Oskar Janusz</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fifi </string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Na pewno nie ja</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Uczniowie</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Uczniowie ktorzy nie zdaja</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QListWidget" name="listWidget_2"/>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
