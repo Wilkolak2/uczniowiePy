@@ -10,23 +10,33 @@ class MyForm(QDialog):
         self.ui = Ui_Dialog()
         super().__init__()
         self.ui.setupUi(self)
-        # self.ui.students.itemSelectionChanged.connect(self.students_fail)
-        self.ui.augustButton.clicked.connect(self.august)
+        self.ui.students.itemClicked.connect(self.students_fail)
+        self.ui.failedStudents.itemClicked.connect(self.good_students)
+        self.ui.wyrokButton.clicked.connect(self.student_save)
         self.show()
 
-
-    def august(self):
-        items = self.ui.students.selectedItems()
-        for item in items:
-            self.ui.failedStudents.addItem(item.text())
-            self.ui.students.takeItem(self.ui.students.row(item))
-"""
     def students_fail(self):
         items = self.ui.students.selectedItems()
-        self.ui.students.removeItemWidget(items[0])
+        self.ui.students.takeItem(self.ui.students.currentRow())
         for item in items:
             self.ui.failedStudents.addItem(item.text())
-"""
+
+
+    def good_students(self):
+        items = self.ui.failedStudents.selectedItems()
+        self.ui.failedStudents.takeItem(self.ui.failedStudents.currentRow())
+        for item in items:
+            self.ui.students.addItem(item.text())
+
+
+    def student_save(self):
+        with open('sierpien.txt','w') as file:
+            for i in range(self.ui.failedStudents.count()):
+                file.write(self.ui.failedStudents.item(i).text())
+                file.write('\n')
+
+
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     ex = MyForm()

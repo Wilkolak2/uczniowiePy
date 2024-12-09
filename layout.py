@@ -32,16 +32,20 @@ class Ui_Dialog(object):
         self.gridLayout.addWidget(self.students, 0, 1, 1, 1)
         self.failedStudents = QtWidgets.QListWidget(parent=self.gridLayoutWidget)
         self.failedStudents.setObjectName("failedStudents")
-        self.gridLayout.addWidget(self.failedStudents, 2, 1, 1, 1)
+        self.gridLayout.addWidget(self.failedStudents, 1, 1, 1, 1)
         self.label = QtWidgets.QLabel(parent=self.gridLayoutWidget)
         self.label.setObjectName("label")
         self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
         self.label_2 = QtWidgets.QLabel(parent=self.gridLayoutWidget)
         self.label_2.setObjectName("label_2")
-        self.gridLayout.addWidget(self.label_2, 2, 0, 1, 1)
-        self.augustButton = QtWidgets.QPushButton(parent=self.gridLayoutWidget)
-        self.augustButton.setObjectName("augustButton")
-        self.gridLayout.addWidget(self.augustButton, 1, 0, 1, 2)
+        self.gridLayout.addWidget(self.label_2, 1, 0, 1, 1)
+        self.wyrokButton = QtWidgets.QPushButton(parent=self.gridLayoutWidget)
+        self.wyrokButton.setStyleSheet("font-weight:bold;\n"
+"color: #FF0000;\n"
+"background-color:rgb(0, 0, 255);\n"
+"")
+        self.wyrokButton.setObjectName("wyrokButton")
+        self.gridLayout.addWidget(self.wyrokButton, 2, 0, 1, 2)
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -62,4 +66,4 @@ class Ui_Dialog(object):
         self.students.setSortingEnabled(__sortingEnabled)
         self.label.setText(_translate("Dialog", "Uczniowie"))
         self.label_2.setText(_translate("Dialog", "Uczniowie ktorzy nie zdaja"))
-        self.augustButton.setText(_translate("Dialog", "kierunek sierpien"))
+        self.wyrokButton.setText(_translate("Dialog", "Zapisz Wyrok"))
