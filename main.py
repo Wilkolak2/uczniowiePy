@@ -1,3 +1,4 @@
+import os.path
 import sys
 
 from PyQt6.QtWidgets import QDialog, QApplication
@@ -14,7 +15,24 @@ class MyForm(QDialog):
         self.ui.failedStudents.itemClicked.connect(self.good_students)
         self.ui.wyrokButton.clicked.connect(self.student_save)
         self.ui.wyrokButton.clicked.connect(self.student_save2)
+        self.ui.pushButton.clicked.connect(self.addStudent)
+
+        self.read_students()
         self.show()
+
+    def read_students(self):
+        if os.path.exists('sierpien.txt') and os.path.exists('zdajacy.txt'):
+            self.ui.students.clear()
+            self.ui.failedStudents.clear()
+            with open('zdajacy.txt', 'r') as file:
+                students = file.read().splitlines()
+                for student in students:
+                    self.ui.students.addItem(student)
+
+            with open('sierpien.txt', 'r') as file:
+                students = file.read().splitlines()
+                for student in students:
+                    self.ui.failedStudents.addItem(student)
 
     def students_fail(self):
         items = self.ui.students.selectedItems()
@@ -41,6 +59,9 @@ class MyForm(QDialog):
             for i in range(self.ui.students.count()):
                 file.write(self.ui.students.item(i).text())
                 file.write('\n')
+
+    def addStudent(self):
+        self.ui.students.addItem(self.ui.uczenValue.text())
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

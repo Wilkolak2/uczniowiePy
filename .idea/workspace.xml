@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6f78ce6-3e24-44bf-8b3b-56eb9f6b2870" name="Changes" comment="WOW2">
-      <change afterPath="$PROJECT_DIR$/zdajacy.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d6f78ce6-3e24-44bf-8b3b-56eb9f6b2870" name="Changes" comment="esz">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/layout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout.ui" beforeDir="false" afterPath="$PROJECT_DIR$/layout.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sierpien.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sierpien.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +26,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/MrFajFel/pyqtUczniowie.git",
+    "url": "https://github.com/Wilkolak2/uczniowiePy.git",
     "accountId": "6fd7386d-7124-4c11-b54a-b072720ad955"
   }
 }]]></component>
@@ -95,7 +95,7 @@
       <updated>1732885248651</updated>
       <workItem from="1732885250469" duration="797000" />
       <workItem from="1733142936279" duration="2312000" />
-      <workItem from="1734352651373" duration="476000" />
+      <workItem from="1734352651373" duration="1855000" />
     </task>
     <task id="LOCAL-00001" summary="WOW">
       <option name="closed" value="true" />
@@ -121,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733145203183</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="esz">
+      <option name="closed" value="true" />
+      <created>1734353316409</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734353316409</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,10 +138,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="WOW" />
     <MESSAGE value="WOW2" />
-    <option name="LAST_COMMIT_MESSAGE" value="WOW2" />
+    <MESSAGE value="esz" />
+    <option name="LAST_COMMIT_MESSAGE" value="esz" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Uczniowie$main.coverage" NAME="main Coverage Results" MODIFIED="1733145193671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/uczniowie2$main.coverage" NAME="main Coverage Results" MODIFIED="1734353127834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/uczniowie2$main.coverage" NAME="main Coverage Results" MODIFIED="1734354512075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
