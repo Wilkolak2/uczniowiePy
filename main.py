@@ -13,6 +13,7 @@ class MyForm(QDialog):
         self.ui.students.itemClicked.connect(self.students_fail)
         self.ui.failedStudents.itemClicked.connect(self.good_students)
         self.ui.wyrokButton.clicked.connect(self.student_save)
+        self.ui.wyrokButton.clicked.connect(self.student_save2)
         self.show()
 
     def students_fail(self):
@@ -35,7 +36,11 @@ class MyForm(QDialog):
                 file.write(self.ui.failedStudents.item(i).text())
                 file.write('\n')
 
-
+    def student_save2(self):
+        with open('zdajacy.txt','w') as file:
+            for i in range(self.ui.students.count()):
+                file.write(self.ui.students.item(i).text())
+                file.write('\n')
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
